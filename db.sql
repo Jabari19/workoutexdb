@@ -75,7 +75,7 @@ CREATE TABLE Equipment (
 CREATE TABLE Goals (
     goal_id INT PRIMARY KEY AUTO_INCREMENT,
     user_id INT,
-    goal_description TEXT,
+    description TEXT,
     target_date DATE,
     FOREIGN KEY (user_id) REFERENCES Users(user_id)
 );
