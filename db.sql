@@ -10,6 +10,7 @@ CREATE TABLE Users (
     last_name VARCHAR(50),
     email VARCHAR(100),
     age INT
+     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 -- Create the Trainers table (this was causing issues because it was referenced before creation)
